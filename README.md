@@ -12,9 +12,9 @@ pip install mailer
 
 ## Preparation for first time
 Enter SendMail.py and enter the following:
-- credentials (mail and password) of the sender
-- mail of the receiver
-- subject of the mail
+- Credentials (mail and password) of the sender
+- Mail of the receiver
+- Subject of the mail
 - Optional: change the syntax of the message received in the bash script
 
 ## Usage
