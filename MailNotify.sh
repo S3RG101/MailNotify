@@ -2,16 +2,7 @@
 #
 # Monitor file $1 for changes
 # Send an alert emai to $2 if file $1 changes
-# usage: file_change_mail_alert.sh /var/log/messages your.name@domain.com
-#
-if [ -z “$2” ]; then
-
-echo "Usage: file_change_mail_alert.sh "
-
-exit 1
-
-fi
-
+# usage: file_change_mail_alert.sh /var/log/messages
 
 #if a inotifywait for this file is already running
 
@@ -34,7 +25,7 @@ type -P inotifywait &>/dev/null || { echo "Error: This script requires inotifywa
 
 if [ -f $1 ]; then
 
-echo “Monitoring file $1 for changes - sending alerts to $2”
+echo “Monitoring file $1 for changes - sending alerts”
 
 
 while inotifywait -e modify -e attrib -e move -e delete $1 -o /root/audit.log; do
