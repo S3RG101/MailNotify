@@ -37,7 +37,7 @@ changes="$(tail -1 $1)"
 
 # changes="$(cat /root/audit.log)"
 	
-	python3 /names/SendMail.py "Change in $1: $changes"
+	python3 ./SendMail.py "Change in $1: $changes"
 	rm /root/audit.log
 	touch /root/audit.log		
 done
