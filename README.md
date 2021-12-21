@@ -10,7 +10,7 @@ Mailer is the python package that sends the mail.
 pip install mailer
 ```
 
-##Preparation for first time
+## Preparation for first time
 Enter SendMail.py and fill in the blanks of the sender mails and receiver mails.
 
 ## Usage
