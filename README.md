@@ -6,5 +6,8 @@ A bash and python script that sends a notification via email when a file changes
 pip install mailer
 ```
 
+##Preparation for first time
+Enter the 
+
 ## Usage
 
